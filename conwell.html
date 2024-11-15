@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <link rel="stylesheet" href="conwell.css">
+    </head>
+
+    <div>
+      <header class="mainheader">
+          <img src="images/whitelogo.png" alt="Image" Height="280px" width="280px" class="logo">
+          <!-- <h1 class="imbue-main">Welcome to The Conwell</h1> -->
+      </header>
+  </div>
+ <body>
+<div id="popupDiv" class="popup-content">
+    <p id="paragraph"></p> 
+    <button id="playButton">PLAY</button>
+  
+</div>
+
+<div class="container-desktop">
+<!-- Image and Text for arnold -->
+ <div class="item suspect1">
+      <img src="images/arnoldd.png">
+    </div>
+
+<!-- Image and Text for luci -->
+    <div class="item suspect2">
+      <img src="images/lucii.png" alt="Suspect 2">
+    </div>
+
+<!-- Image and Text for jax -->
+    <div class="item suspect3">
+      <img src="images/jaxx.png" alt="Suspect 3">
+    </div>
+
+<!-- Image and Text for torrence -->    
+    <div class="item suspect4">
+      <img src="images/torrencee.png" alt="suspect4">
+   </div>
+
+<!-- Image and Text for banner -->    
+   <div class="banner">
+    <img src="images/conwell banner.png" >
+ </div>
+
+<!-- Image and Text for room201 -->    
+ <div class="room201">
+  <img src="images/room201.png" Height="160" width="190"> 
+</div>
+
+
+<!-- Image and Text for keytag -->    
+<div class="keytag">
+  <img src="images/keytag.png" id="draggableImage" draggable="true" alt="Draggable Image">> 
+</div>
+
+<!-- Image and Text for paper -->    
+<div class="paper">
+  <img src="images/paper.png"> 
+</div>
+
+<!-- Image and Text for lug -->    
+<div class="lug">
+  <img src="images/lug.png"> 
+</div>
+
+<!-- Image and Text for lug -->    
+<div class="lug" Height="160" width="190">
+</div>
+
+<!-- Image and Text for dnd -->    
+<div class="dnd">
+  <img src="images/DND.png"> 
+</div>
+
+<!-- Image and Text for dnd -->    
+<div class="dnd" Height="160" width="190">
+</div>
+
+</div>
+
+<!-- Inside this container goes the ipad logic -->
+<div class="container-ipad">
+  <div class="cardsIpad">
+    <div class="memory-game">
+
+      <!-- Repeat this structure for all 12 cards -->
+      <div class="memory-card" data-framework="suspect1">
+        <img class="front-face" src="images/cardfront.png" alt="Suspect 1" height="170px" width="180px">
+        <img class="back-face" src="images/key.png" alt="Card Back" height="170px" width="180px">
+      </div>
+
+      <div class="memory-card" data-framework="suspect2">
+        <img class="front-face" src="images/cardfront.png" alt="Suspect 2" height="170px" width="180px">
+        <img class="back-face" src="images/ash.png" alt="Card Back" height="580px" width="600px">
+      </div>
+
+      <div class="memory-card" data-framework="suspect1">
+        <img class="front-face" src="images/cardfront.png" alt="Suspect 3" height="170px" width="180px">
+        <img class="back-face" src="images/key.png" alt="Card Back" height="170px" width="180px">
+      </div>
+
+      <div class="memory-card" data-framework="suspect4">
+        <img class="front-face" src="images/cardfront.png" alt="Suspect 1" height="170px" width="180px">
+        <img class="back-face" src="images/olives.png" alt="Card Back" height="170px" width="180px">
+      </div>
+
+      <div class="memory-card" data-framework="suspect2">
+        <img class="front-face" src="images/cardfront.png" alt="Suspect 2" height="170px" width="180px">
+        <img class="back-face" src="images/ash.png" alt="Card Back" height="280px" width="250">
+      </div>
+
+      <div class="memory-card" data-framework="suspect6">
+        <img class="front-face" src="images/cardfront.png" alt="Suspect 3" height="170px" width="180px">
+        <img class="back-face" src="images/check.png" alt="Card Back" height="170px" width="180px">
+      </div>
+      <div class="memory-card" data-framework="suspect7">
+        <img class="front-face" src="images/cardfront.png" alt="Suspect 4" height="170px" width="180px">
+        <img class="back-face" src="images/wine.png" alt="Card Back" height="170px" width="180px">
+      </div>
+
+      <div class="memory-card" data-framework="suspect7">
+        <img class="front-face" src="images/cardfront.png" alt="Suspect 4" height="170px" width="180px">
+        <img class="back-face" src="images/wine.png" alt="Card Back" height="170px" width="180px">
+      </div>
+
+      <div class="memory-card" data-framework="suspect5">
+        <img class="front-face" src="images/cardfront.png" alt="Suspect 3" height="170px" width="180px">
+        <img class="back-face" src="images/2key.png" alt="Card Back" height="170px" width="180px">
+      </div>
+      <div class="memory-card" data-framework="suspect5">
+        <img class="front-face" src="images/cardfront.png" alt="Suspect 1" height="170px" width="180px">
+        <img class="back-face" src="images/2key.png" alt="Card Back" height="170px" width="180px">
+      </div>
+
+      <div class="memory-card" data-framework="suspect6">
+        <img class="front-face" src="images/cardfront.png" alt="Suspect 2" height="170px" width="180px">
+        <img class="back-face" src="images/check.png" alt="Card Back" height="170px" width="180px">
+      </div>
+
+      <div class="memory-card" data-framework="suspect4">
+        <img class="front-face" src="images/cardfront.png" alt="Suspect 3" height="170px" width="180px">
+        <img class="back-face" src="images/olives.png" alt="Card Back" height="170px" width="180px">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Inside this container goes the iphone logic-->
+<div class="container-iphone">
+  <div class="iphone">
+     <div class="crossword">
+    <!-- Row 1 -->
+    <div class="cell black-cell"></div>
+    <div class="cell"><span class="number">1</span><input type="text" maxlength="1" data-answer="B"></div>
+    <div class="cell"><span class="number">6</span><input type="text" maxlength="1" data-answer="E"></div>
+    <div class="cell"><input type="text" maxlength="1" data-answer="L"></div>
+    <div class="cell"><input type="text" maxlength="1" data-answer="L"></div>
+    <div class="cell black-cell"></div>
+    <div class="cell"><span class="number">3</span><input type="text" maxlength="1"></div>
+    <div class="cell"><input type="text" maxlength="1"></div>
+    <div class="cell"><input type="text" maxlength="1"></div>
+    <div class="cell black-cell"></div>
+    <!-- Row 2 -->
+    <div class="cell"><span class="number">5</span><input type="text" maxlength="1"></div>
+    <div class="cell"><input type="text" maxlength="1"></div>
+    <div class="cell"><input type="text" maxlength="1"></div>
+    <div class="cell"><input type="text" maxlength="1"></div>
+    <div class="cell black-cell"></div>
+    <div class="cell"><input type="text" maxlength="1"></div>
+    <div class="cell black-cell"></div>
+    <div class="cell"><input type="text" maxlength="1"></div>
+    <div class="cell black-cell"></div>
+    <div class="cell"><span class="number">9</span><input type="text" maxlength="1"></div>
+    <!-- Row 3 -->
+    <div class="cell"><input type="text" maxlength="1"></div>
+    <div class="cell"><span class="number">2</span><input type="text" maxlength="1"></div>
+    <div class="cell"><input type="text" maxlength="1"></div>
+    <div class="cell black-cell"></div>
+    <div class="cell"><input type="text" maxlength="1"></div>
+    <div class="cell"><span class="number">10</span><input type="text" maxlength="1"></div>
+    <div class="cell"><input type="text" maxlength="1"></div>
+    <div class="cell"><input type="text" maxlength="1"></div>
+    <div class="cell"><input type="text" maxlength="1"></div>
+    <div class="cell"><input type="text" maxlength="1"></div>
+    <!-- Row 4 -->
+    <div class="cell black-cell"></div>
+    <div class="cell"><input type="text" maxlength="1"></div>
+    <div class="cell black-cell"></div>
+    <div class="cell black-cell"></div>
+    <div class="cell"><input type="text" maxlength="1"></div>
+    <div class="cell black-cell"></div>
+    <div class="cell"><input type="text" maxlength="1"></div>
+    <div class="cell black-cell"></div>
+    <div class="cell"><input type="text" maxlength="1"></div>
+    <div class="cell"><input type="text" maxlength="1"></div>
+
+    <div class="cell"><span class="number">8</span><input type="text" maxlength="1" data-answer="E"></div>
+    <div class="cell black-cell"></div>
+    <div class="cell black-cell"></div>
+    <div class="cell"><input type="text" maxlength="1" data-answer="S"></div>
+    <div class="cell"><input type="text" maxlength="1" data-answer="T"></div>
+    <div class="cell"><span class="number">4</span><input type="text" maxlength="1" data-answer="A"></div>
+    <div class="cell"><input type="text" maxlength="1" data-answer="Y"></div>
+    <div class="cell"><input type="text" maxlength="1" data-answer="Y"></div>
+    <div class="cell"><input type="text" maxlength="1" data-answer="R"></div>
+    <div class="cell"><input type="text" maxlength="1" data-answer="E"></div>
+    
+  </div>
+  </div>
+  
+  <div class="clues">
+    <div class="clue-section">
+    <h3>Across</h3>
+    <p>1. Evidence left behind at a crime</p>
+    <p>4. open, obvious, and easily observable </p>
+    <p>10. Choice of weapons...bare!
+  </div>
+  <div class="clue-section">
+    <h3>Down</h3>
+    <p>1. Hotel Swindler</p>
+    <p>2. Investigation</p>
+    <p>5. A key was found on top of a door frame with a curved shape to it</p>
+    <p>6. "Shh you might want to ... through the air vents"</p>
+    <p>9. Someone who acts sus
+  </div>
+  </div>
+  </div>
+  
+  </body>
+
+
+  </div>
+
+
+<script src="conwell.js"></script>
+</body>
+</html>

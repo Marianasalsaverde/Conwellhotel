@@ -1,0 +1,416 @@
+
+body {
+  background-color: #2C4F34;
+}
+
+.popup-content {
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #EFEEEA;
+  padding: 20px;
+  z-index: 9999;
+  width: 900px;
+  height: 400px;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.2);
+  color: #000000;
+  font-family: Imbue;
+  font-size: 30px;
+}
+
+#paragraph {
+  align-items: center;
+  margin-top: 150px;
+  text-align: center;
+  justify-content: center;
+}
+
+#playButton {
+  font-family: Imbue;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 47%;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  outline: 0.5px solid black;
+  background-color: none;
+  color: #000000;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.play-button:hover {
+  background-color: #666;
+}
+
+.mainheader { 
+  top: 10px; /* creates distance from the top this is logo */
+  width: 100%;
+  text-align: center;
+  z-index: 5%; /* for keeping the logo on top */
+  position: relative;
+}
+
+.mainheader img {
+  width: 280px;
+} 
+
+/* arnold */
+.suspect1 { 
+  position: relative;
+  left: 700px;
+  top: 175px;
+  transform: rotate(-10deg);
+  position: fixed;
+  width: 200px;
+}
+
+/* arnold */
+.suspect1 img {
+  width: 400px; 
+  transform: rotate(calc(10deg * var(--rotation-degree))); /* Rotate image */
+} 
+
+/* luci */
+.suspect2 {
+  position: relative;
+  left: 50px;
+  top: 500px;
+  right: 50px;
+  position:fixed; 
+}
+
+/* luci */
+.suspect2 img {
+  width: 300px;
+  transform: rotate(calc(50deg * var(--rotation-degree)));
+}
+
+/* jax */
+.suspect3 {
+  position: relative;
+  top: 490px;
+  left:680px;
+  transform: rotate(-5deg);
+  width: 600px;
+  position:fixed;
+}
+
+/* jax */
+.suspect3 img{
+  width:200px;
+}
+
+/* torrence */
+.suspect4 {
+  position: relative;
+  top: 200px;
+  left: 200px;
+  transform: rotate(-5deg);
+  width: 100px;
+  position:fixed;
+}
+
+/* torrence */
+.suspect4 img{
+  width:325px;
+}
+
+
+.banner {
+  position: relative;
+  top: 300px;
+  left: 500px;
+  transform: rotate(-5deg);
+  width: 500px;
+  position:fixed;
+}
+
+.banner img{
+  width:300px;
+}
+
+.room201 {
+  position: absolute;
+  top: 70%;
+  left: 35%;
+  width: 1000px;
+  position: fixed;
+}
+
+.room201 img{
+  width:200px; 
+} 
+
+.keytag {
+  position: absolute;
+  top: 480px;
+  left: 800px;
+  transform: rotate(-5deg);
+  width: 300px;
+  position: fixed;
+}
+
+.keytag img{
+  width:300px;
+}
+
+.paper {
+  position: absolute;
+  top: 400px;
+  left: 1000px;
+  transform: rotate(10deg);
+  width: 350px;
+  box-shadow:#000000 10px;
+  position: fixed;
+}
+
+.paper img{
+  box-shadow: #000000;
+  width:350px;
+}
+
+.lug {
+  position: absolute;
+  top: 500%;
+  left: 250%;
+  transform: rotate(10deg);
+  width: 350%;
+  position: fixed;
+}
+
+.lug img{
+  width:250px;
+}
+
+.dnd {
+  position: absolute;
+  top: 300px;
+  left: 55px;
+  transform: rotate(10deg);
+  width: 350px;
+  position: fixed;
+}
+
+.dnd img{
+  width:250px;
+}
+
+
+
+.matched {
+  transform: rotateY(180deg); /* Keeps the card flipped */
+  pointer-events: none; /* Prevents matched cards from being clicked again */
+}
+
+.cardsIpad{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  position: relative;
+}
+
+.memory-game {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust columns as needed */
+  max-width: 1000px;
+  margin: auto;
+}
+
+.memory-card {
+  width: 170px;
+  height: 180px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.memory-card img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(0deg);
+}
+
+.back-face {
+  transform: rotateY(180deg);
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+.container-iphone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.crossword {
+  display: grid;
+  grid-template-columns: repeat(10, 0px); /* 10 columns with 40px width each */
+  grid-template-rows: repeat(10, 10px);    /* 10 rows with 40px height each */
+  gap: 1px;
+  padding: 10px;
+}
+
+
+.cell {
+  position: relative;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #999;
+  padding: 0;
+  margin: 0;
+}
+
+.cell input {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: none;
+  font-size: 1.2em;
+}
+
+.cell.numbered::before {
+  content: attr(data-number);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: 0.6em;
+  color: #ffffff;
+}
+
+.cell input:focus {
+  outline: none;
+}
+
+.black-cell {
+  background-color: #FFBC00;
+}
+
+.correct {
+  background-color: #d3d3d3;
+}
+
+.number {
+  font-size: 0.6em;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  color: #333;
+}
+
+.clues {
+  color: #EFEEEA;
+  margin-top: 20px;
+  max-width: 300px;
+}
+
+.clues h3 {
+  margin: 10px;
+}
+
+.clues {
+  display: flex;
+  gap: 50px; 
+  
+}
+
+.clue-section {
+  flex: 5; /* This will make each section take up equal space */
+}
+
+.clue-section h3 {
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  .container-iphone{
+  display:block;
+  }
+
+  .popup-content{
+    width: 400px;
+  }
+  
+  .crossword {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5,1fr);
+  }
+
+  .cell {
+    width: 30px;
+    height: 30px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .clues {
+    font-family: Imbue;
+    font-size: 19px;
+  }
+
+  .container-ipad, .container-desktop {
+    display: none;
+  }
+}
+
+
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+.container-ipad {
+  display: block;
+}
+.container-iphone, .container-desktop {
+  display: none;
+}
+
+.popup-content{
+  width: 500px;
+}
+
+}
+
+@media only screen and (min-width: 801px) and (max-width: 3000px) {
+  .container-desktop {
+    display: block;
+  }
+
+  .container-iphone, .container-ipad {
+    display: none;
+  }
+}
+
+
+
+
+
+
